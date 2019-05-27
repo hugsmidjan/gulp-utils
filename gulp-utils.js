@@ -25,10 +25,14 @@ const notifyError = (error) => {
 
 const notifyPipeError = () => require('gulp-plumber')(notifyError);
 
+const makeDir = (path, stripFileName) =>
+  require('mkdirp').sync(stripFileName ? path.replace(/\/[^/]+$/, '') : path);
+
 module.exports = {
   normalizeOpts,
   notifyError,
   notifyPipeError,
   prefixGlobs,
   gulpReplace: require('gulp-replace'),
+  makeDir,
 };

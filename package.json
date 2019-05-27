@@ -21,6 +21,7 @@
   "dependencies": {
     "gulp-plumber": "^1.2.1",
     "gulp-replace": "^1.0.0",
+    "mkdirp": "^0.5.1",
     "node-notifier": "^5.4.0"
   }
 }

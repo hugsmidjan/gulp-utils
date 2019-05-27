@@ -29,5 +29,9 @@ const {
   // Usage:  `src(glob).pipe(notifyPipeError())`.
 
   gulpReplace, // shortcut to the `gulp-replace` module
+
+  makeDir, // (path: string, stripFileName: boolean) => void
+  // Thin wrapper around `mkdirp.sync` with optional fileName stripping
+
 } = require('@hugsmidjan/gulp-utils');
 ```

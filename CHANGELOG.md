@@ -3,6 +3,7 @@
 ## Upcoming...
 
 - ... <!-- Add new lines here. Version number will be decided later -->
+- feat: Add `makeDir` helper - wraps `mkdirp.sync` and optionally strips filename
 
 ## 0.1.0
 
