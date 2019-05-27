@@ -3,6 +3,7 @@
 ## Upcoming...
 
 - ... <!-- Add new lines here. Version number will be decided later -->
+- fix: Handle cases like `makeDir('justfilename.ext', true);`
 
 ## 0.1.1
 
