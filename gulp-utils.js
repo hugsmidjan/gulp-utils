@@ -10,7 +10,12 @@ const normalizeOpts = (userOpts, defaultOpts) => {
   return opts;
 };
 
-const prefixGlobs = (globs, src) => globs.map((glob) => src + glob);
+const prefixGlobs = (globs, src) => globs.map((glob) => {
+  if (glob.charAt(0) === '!') {
+    return '!'+src + glob.substr(1);
+  }
+  return src + glob;
+});
 
 // Error handing
 
